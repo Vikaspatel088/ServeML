@@ -1,0 +1,40 @@
+# Local environments and credentials
+.venv/
+venv/
+env/
+.env
+.env.*
+!.env.example
+
+# Python caches, test output, and coverage
+**/__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Frontend/build caches
+node_modules/
+dist/
+build/
+.cache/
+
+# IDE and operating-system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Temporary and log files
+*.log
+*.tmp
+*.temp
+*.bak
+
+# Include only the verified demo artifact and its generated metadata.
+artifacts/*.joblib
+artifacts/*.json
+!artifacts/iris_model.joblib
+!artifacts/model_metadata.json
